@@ -180,106 +180,132 @@
     <!-- About Section End -->
 
     <!-- Track Section Begin -->
-    <section class="track spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="section-title">
-                        <h2>Latest tracks</h2>
-                        <h1>SpaceFunk75!</h1>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="track__all">
-                        <a href="#" class="primary-btn border-btn">View all tracks</a>
-                    </div>
+<section class="track spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="section-title">
+                    <h2>Latest tracks</h2>
+                    <h1>SpaceFunk75!</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-7 p-0">
-                    <div class="track__content nice-scroll">
-                        <div class="single_player_container">
-                            <h4>Rox-Anne</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_1"
-                                data-url="./static/music-files/Roxanne.wav"></div>
-                            <div class="jp-audio jp_container_1" role="application" aria-label="media player">
-                                <div class="jp-gui jp-interface">
-                                    <!-- Player Controls -->
-                                    <div class="player_controls_box">
-                                        <button class="jp-play player_button" tabindex="0"></button>
-                                    </div>
-                                    <!-- Progress Bar -->
-                                    <div class="player_bars">
-                                        <div class="jp-progress">
-                                            <div class="jp-seek-bar">
-                                                <div>
-                                                    <div class="jp-play-bar">
-                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                                    </div>
-                                    <!-- Volume Controls -->
-                                    <div class="jp-volume-controls">
-                                        <button class="jp-mute" tabindex="0"><i
-                                                class="fa fa-volume-down"></i></button>
-                                        <div class="jp-volume-bar">
-                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_player_container">
-                            <h4>Rox-Anne Radio Edit</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_2"
-                                data-url="./static/music-files/RoxanneRadio.wav"></div>
-                            <div class="jp-audio jp_container_2" role="application" aria-label="media player">
-                                <div class="jp-gui jp-interface">
-                                    <!-- Player Controls -->
-                                    <div class="player_controls_box">
-                                        <button class="jp-play player_button" tabindex="0"></button>
-                                    </div>
-                                    <!-- Progress Bar -->
-                                    <div class="player_bars">
-                                        <div class="jp-progress">
-                                            <div class="jp-seek-bar">
-                                                <div>
-                                                    <div class="jp-play-bar">
-                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                                    </div>
-                                    <!-- Volume Controls -->
-                                    <div class="jp-volume-controls">
-                                        <button class="jp-mute" tabindex="0"><i
-                                                class="fa fa-volume-down"></i></button>
-                                        <div class="jp-volume-bar">
-                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-5 p-0">
-                    <div class="track__pic">
-                        <img src="./static/img/discography/vin.png" alt="">
-                    </div>
+            <div class="col-lg-5">
+                <div class="track__all">
+                    <a href="#" class="primary-btn border-btn">View all tracks</a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Track Section End -->
+        <div class="row">
+            <div class="col-lg-7 p-0">
+                <div class="track__content nice-scroll">
+                    <div class="single_player_container">
+                        <h4>Rox-Anne</h4>
+                        <div class="jp-jplayer jplayer" data-ancestor=".jp_container_1"
+                            data-url="{{ url_for('static', filename='music-files/Roxanne.wav') }}"></div>
+                        <div class="jp-audio jp_container_1" role="application" aria-label="media player">
+                            <div class="jp-gui jp-interface">
+                                <!-- Player Controls -->
+                                <div class="player_controls_box">
+                                    <button class="jp-play player_button" tabindex="0"></button>
+                                </div>
+                                <!-- Progress Bar -->
+                                <div class="player_bars">
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div>
+                                                <div class="jp-play-bar">
+                                                    <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                </div>
+                                <!-- Volume Controls -->
+                                <div class="jp-volume-controls">
+                                    <button class="jp-mute" tabindex="0"><i class="fa fa-volume-down"></i></button>
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_player_container">
+                        <h4>Rox-Anne Radio Edit</h4>
+                        <div class="jp-jplayer jplayer" data-ancestor=".jp_container_2"
+                            data-url="{{ url_for('static', filename='music-files/RoxanneRadio.wav') }}"></div>
+                        <div class="jp-audio jp_container_2" role="application" aria-label="media player">
+                            <div class="jp-gui jp-interface">
+                                <!-- Player Controls -->
+                                <div class="player_controls_box">
+                                    <button class="jp-play player_button" tabindex="0"></button>
+                                </div>
+                                <!-- Progress Bar -->
+                                <div class="player_bars">
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div>
+                                                <div class="jp-play-bar">
+                                                    <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                </div>
+                                <!-- Volume Controls -->
+                                <div class="jp-volume-controls">
+                                    <button class="jp-mute" tabindex="0"><i class="fa fa-volume-down"></i></button>
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-5 p-0">
+                <div class="track__pic">
+                    <img src="{{ url_for('static', filename='img/discography/vin.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Track Section End -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const jpPlayers = document.querySelectorAll('.jp-jplayer');
+        jpPlayers.forEach(player => {
+            const url = player.getAttribute('data-url');
+            $(player).jPlayer({
+                ready: function () {
+                    $(this).jPlayer("setMedia", {
+                        wav: url
+                    });
+                },
+                play: function() { // To avoid multiple jPlayers playing together.
+                    $(this).jPlayer("pauseOthers");
+                },
+                timeupdate: function(event) { // Update the play bar's width based on the current time
+                    const ancestor = $(this).closest('.jp-audio');
+                    ancestor.find('.jp-play-bar').css('width', event.jPlayer.status.currentPercentAbsolute + '%');
+                    ancestor.find('.jp-current-time').text($.jPlayer.convertTime(event.jPlayer.status.currentTime));
+                    ancestor.find('.jp-duration').text($.jPlayer.convertTime(event.jPlayer.status.duration));
+                },
+                swfPath: "{{ url_for('static', filename='js') }}",
+                supplied: "wav",
+                wmode: "window",
+                cssSelectorAncestor: player.getAttribute('data-ancestor')
+            });
+        });
+    });
+</script>
+
 
     <!-- Youtube Section Begin -->
     <section class="youtube spad">
